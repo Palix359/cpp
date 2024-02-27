@@ -35,7 +35,13 @@ int main() {
 	for (int j = 99; j >= 13; j -= 2)
 		cout << j << " ";
 	int k;
+	long long w = 1;
 	cin >> k;
-	for k 
+	if (k == 0) {
+		cout << "1";
+	}
+	for (k; k > 0; k--)
+		w *= k;
+	cout<<w;
 	return 0;
 }
