@@ -1,5 +1,41 @@
 #include<iostream>
 using namespace std;
 int main() {
-
+	//switch - match w pythonie
+	/*switch (wyrażenie) {
+		case wartosc1 : instrukcja1;
+		case wartosc2 : instrukcja2;
+		case wartoscN : instrukcjaN
+		default: instrukcja;
+	}
+	*/
+	cout << "Podaj ocene\n";
+	short ocena; cin >> ocena;
+	switch (ocena) {
+	case 1: cout << "ndst"; break;
+	case 2: cout << "dop"; break;
+	case 3: cout << "dst"; break;
+	case 4: cout << "db"; break;
+	case 5: cout << "bdb"; break;
+	case 6: cout << "cel"; break;
+	default:cout << "Nie ma takiej oceny";
+	}
+	/*
+	Instrukcje iteracyjne (pętle):
+	a) for
+	b) while 
+	c) do while 
+	
+	Ad. a)
+	for(zm. sterująca;warunek kontynuacji;wrażenie)
+		instrukcja;
+	*/
+	for (int i = 0; i < 100; i++) // !=
+		cout<< "Nie bede przeszkadzal na lekcjach informatyki";
+	for (int j = 99; j >= 13; j -= 2)
+		cout << j << " ";
+	int k;
+	cin >> k;
+	for k 
+	return 0;
 }
