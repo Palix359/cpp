@@ -61,5 +61,27 @@ int main() {
 		b = c;
 	} while (b > 0);
 	cout << "NWD = " << a;*/
+
+	/*
+	Tablice danych w C++:
+	a) statyczne C++
+	b) dynamiczne C++
+	c) kontenery STL, np. vecotr  C++
+
+	Ad. a)
+	typDanych indentyfikator[ilosc_elementow];
+	*/
+	/*int liczby[10] = {1,2,3};
+	int len = sizeof(liczby) / sizeof(int);
+	for (int i = 0; i < len; i++)
+		cout << liczby[i] << '  ';
+	cout << endl<<len;
+	liczby[9] = 123;*/
+	// const unsigned int N = 100;
+	// int t[N];
+	short n = 0;
+	cin >> n;
+	int tablica[100]
+
 	return 0;
-	}
+}
