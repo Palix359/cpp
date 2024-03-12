@@ -79,9 +79,18 @@ int main() {
 	liczby[9] = 123;*/
 	// const unsigned int N = 100;
 	// int t[N];
-	short n = 0;
-	cin >> n;
-	int tablica[100]
+	const unsigned int N = 100;
+	int tablica[N];
+	for (int i = 0; i < N; i++)
+		tablica[i] = rand() % 10 + 1;
+	cout << "Podaj liczbe od 1 do 10\n";
+	int number, cnt = 0; cin >> number;
+	for (int i = 0; i < N; i++) {
+		if (tablica[i] == number)
+			cnt++;
+	}
+	cout << "Liczba " << number << " wystepuje " << cnt << " razy.";
+
 
 	return 0;
 }
