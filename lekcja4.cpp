@@ -33,7 +33,9 @@ int main() {
 	int liczba1, liczba2;
 	cout << "Podaj 2 liczby\n";
 	cin >> liczba1 >> liczba2;
-
+	cout <<liczba1 << ' ' << liczba2 << endl;
+	zamien1(liczba1, liczba2);
+	cout << liczba1 << ' ' << liczba2;
 	potrojenie(10);
 	cout << "Podaj liczbe:\n";
 	int wynik = potrojenie1(30) + 1;
