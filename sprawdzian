@@ -1,0 +1,151 @@
+1 Zadanie 
+
+#include<iostream>
+#include<string>
+#define E 2.71 //zmienna stała o indentyfikatorze e (duże E, żeby zmienna się nie powtarzała w drugim sposobie)
+using namespace std;
+
+int funkcja(string znakowa, int calkowita){}
+int main() {
+	float zmienna = 10.23;
+	const float e = 2.72;
+	//1 sposób tworzenia instrukcji warunkowej
+	int a = 1, b = 2;
+	bool rownosc = (a == b) ? true : false;
+	//2 sposób tworzenia instrukcji warunkowej
+	if (rownosc == 1) {
+		cout << "Liczba a jest rowna liczbie b" << endl;
+	}
+	else {
+		cout << "Liczba a nie jest rowana liczbie b" << endl;
+	}
+	//3 sposób tworzenia instrukcji warunkowej
+	short ocena = 4;
+	switch (ocena) {
+	case 1: cout << "ndst" << endl;
+	case 2: cout << "dop" << endl;
+	case 3: cout << "dst" << endl;
+	case 4: cout << "db" << endl;
+	case 5: cout << "bdb" << endl;
+	case 6: cout << "cel" << endl;
+	default: cout << "Nie ma takiej oceny" << endl;
+	}
+
+	return 0;
+}
+
+2 zadanie 
+
+#include<iostream>
+using namespace std;
+
+int main() {
+	float a, b, c, d,h;
+		cout << "Witaj w programie obliczajacym pole i obwod trapezu!" << endl;
+		cout << "Podaj dlugosc pierwszej podstawy trapezu: ";
+		cin >> a;
+		cout << "Podaj dlugosc drugiej podstwy trapezu: ";
+		cin >> b;
+		cout << "Podaj 1 bok trapezu: ";
+		cin >> c;
+		cout << "Podaj 2 bok trapezu: ";
+		cin >> d;
+		cout << "Podaj wysokosc trapezu: ";
+		cin >> h;
+		if (a<=0||b<=0||c<=0||d<=0||h<=0) {
+			cout << "Podano nieprawidlowe dane";
+		}
+		else {
+			cout << "Pole trapezu wynosi: " << ((a + b) * h) * 0.5 << endl;;
+			cout << "Obwod trapezu wynosi: " << a + b + c + d << endl;
+		}
+	return 0;
+}
+
+3 zadanie
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a, b, c, g;
+	g = 0;
+	do {
+		g++;
+		if (g > 0) {
+			cout << "Podane liczby sa sobie rowne, podaj liczby jeszcze raz" << endl;
+		}
+		cout << "Podaj 1 liczbe: ";
+		cin >> a;
+		cout << "Podaj 2 liczbe: ";
+		cin >> b;
+		cout << "Podaj 3 liczbe: ";
+		cin >> c;
+	} while (a == b || b == c || c == a);
+	if (a < b) {
+		if (a < c) {
+			cout << "Liczba " << a << " jest najmniejsza";
+		}
+		else {
+			cout << "Liczba " << c << " jest najmniejsza";
+		}
+	}
+	else if (b < c) {
+		cout << "Liczba " << b << " jest najmniejsza";
+	}
+	else {
+		cout << "Liczba " << c << " jest najmniejsza";
+	}
+	
+	return 0;
+}
+
+zadanie 4
+
+zadanie 5
+
+#include<iostream>
+#include<time.h>
+#define N 12;
+using namespace std;
+int kaskadaLotek() {
+	return rand() % 24 + 1;
+}
+int main() {
+	int tablica[12], i;
+	for (i = 12; i > 0;i--) {
+		tablica[i] = kaskadaLotek();
+		i--;
+	}
+	int s = 12, a, cnt;
+	cout << "Masz 12 strzalow." << endl;
+	while (s > 0) {
+		cout << "Wpisz liczbe z zakresu od 1 do 24: ";
+		cin >> a;
+		for (i = 12; i > 0; i--) {
+			if (tablica[i] == a) {
+				cnt++;
+			}
+		}
+
+	}
+	if (cnt >= 8) {
+		cout << "Wygrales, trafiajac w liczbe " << cnt << " razy.";
+	}
+	else {
+		cout << "Przegrales";
+	}
+
+
+}
+
+zadanie 6
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	int a = 0b0;
+	cin >> a;
+	
+}
