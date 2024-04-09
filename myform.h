@@ -95,7 +95,7 @@ namespace ProjektGraphics {
 #pragma endregion
 	private: System::Void btnStart_Click(System::Object^ sender, System::EventArgs^ e) {
 		//label1->Text = "Witaj świecie!";
-		Graphics^ g = this->CreateGraphics();
+		//Graphics^ g = this->CreateGraphics();
 		//utwórz ‘uchwyt’ do obiektu SolidBrush (wypełnienie jednolitym kolorem): 
 		//utwórz ‘uchwyt’ do obiektu Font: 
 		//System::Drawing::Font^ czcionka = gcnew
@@ -103,26 +103,29 @@ namespace ProjektGraphics {
 		//utwórz obiekt Color: 
 		//Color c = Color::Purple;
 		//utwórz inny obiekt Color: 
-		Color tlo = Color::FromArgb(255, 51, 204, 255);
+		//Color tlo = Color::FromArgb(255, 51, 204, 255);
 		//wyczyść powierzchnię rysowania g i wypełnij ją kolorem k:
-		g->Clear(tlo);
+		//g->Clear(tlo);
 		//namaluj napis ustawiona czcionka i pędzlem, począwszy od punktu (50,100): 
-		g->DrawString("Napis", czcionka, pedzel, 50, 100);
+		//g->DrawString("Napis", czcionka, pedzel, 50, 100);
 		//utwórz ‘uchwyt’ do obiektu Pen: 
-		Pen^ pioro = gcnew Pen(Color::Black, 3.);
-		g->DrawLine(pioro, 411, 141, 487, 154);
-		g->DrawRectangle(pioro, 60, 155, 340, 50); //(punkt ax, ay, szer, wys)
-		SolidBrush^ brYellow = gcnew SolidBrush(Color::Yellow);
-		g->FillRectangle(brYellow, 60, 200, 340, 50);
-		g->DrawEllipse(pioro, 800, 70, 100, 120);
-		Point A = Point(150, 440);
-		Point B = Point(230, 300);
-		Point C = Point(70, 300);
-		array<Point>^ tab = { A,B,C };
-		g->DrawPolygon(pioro,tab);
-		SolidBrush^ brWhite = gcnew SolidBrush(Color::White);
-		g->FillPie(brWhite, 390, 290, 200, 300, 180, 180);
+		//Pen^ pioro = gcnew Pen(Color::Black, 3.);
+		//g->DrawLine(pioro, 411, 141, 487, 154);
+		//g->DrawRectangle(pioro, 60, 155, 340, 50); //(punkt ax, ay, szer, wys)
+		//SolidBrush^ brYellow = gcnew SolidBrush(Color::Yellow);
+		//g->FillRectangle(brYellow, 60, 200, 340, 50);
+		//g->DrawEllipse(pioro, 800, 70, 100, 120);
+		//Point A = Point(150, 440);
+		//Point B = Point(230, 300);
+		//Point C = Point(70, 300);
+		//array<Point>^ tab = { A,B,C };
+		//g->DrawPolygon(pioro,tab);
+		//SolidBrush^ brWhite = gcnew SolidBrush(Color::White);
+		//g->FillPie(brWhite, 390, 290, 200, 300, 180, 180);
 
+		Graphics^ g = this->CreateGraphics();
+		Color tlo = Color::FromArgb(255, 51, 204, 255);
+		g->Clear(tlo);
 	}
 };
 }
