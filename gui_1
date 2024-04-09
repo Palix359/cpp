@@ -1,0 +1,8 @@
+#include "MyForm.h"
+using namespace ProjektGraphics;
+
+int main() { // nazwa funkcji może być dowolna ale trzeba wtedy to zmienić w zaawansowanych projektu -> konsolidator -> zaawansowane
+	ProjektGraphics::MyForm formularz;
+	Application::Run(% formularz);
+	return 0;
+}
