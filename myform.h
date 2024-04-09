@@ -59,11 +59,11 @@ namespace ProjektGraphics {
 			// 
 			// btnStart
 			// 
-			this->btnStart->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 14.25F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
-				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(238)));
-			this->btnStart->Location = System::Drawing::Point(1209, 615);
+			this->btnStart->Font = (gcnew System::Drawing::Font(L"MS Reference Sans Serif", 18, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
+				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
+			this->btnStart->Location = System::Drawing::Point(600, 35);
 			this->btnStart->Name = L"btnStart";
-			this->btnStart->Size = System::Drawing::Size(208, 69);
+			this->btnStart->Size = System::Drawing::Size(262, 89);
 			this->btnStart->TabIndex = 0;
 			this->btnStart->Text = L"Naciśnij przycisk";
 			this->btnStart->UseVisualStyleBackColor = true;
@@ -122,9 +122,10 @@ namespace ProjektGraphics {
 		//g->DrawPolygon(pioro,tab);
 		//SolidBrush^ brWhite = gcnew SolidBrush(Color::White);
 		//g->FillPie(brWhite, 390, 290, 200, 300, 180, 180);
-
+		btnStart->Text = "Wesołych świąt!";
+		btnStart->BackColor=
 		Graphics^ g = this->CreateGraphics();
-		Color tlo = Color::FromArgb(255, 51, 204, 255);
+		Color tlo = Color::FromArgb(255, 192, 242, 159);
 		g->Clear(tlo);
 	}
 };
