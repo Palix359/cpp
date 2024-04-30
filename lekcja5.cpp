@@ -45,5 +45,17 @@ int main() {
 		if (sito[i] == true)
 			cout <<'\n' << i << ' ';
 	delete[] sito;
+	int a;
+	int tablica[5];
+	for (int i = 0; i < 5; i++)
+		tablica[i] = rand() % 10 + 1;
+	int j = 4;
+	int c = 1;
+	while (j != 0) {
+		a = tablica[c];
+		for (int x = 1; x < j; x++)
+			if (a > tablica[x])
+
+	}
 	return 0;
 }
